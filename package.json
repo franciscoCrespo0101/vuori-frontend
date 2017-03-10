@@ -2,16 +2,15 @@
   "name": "testFront",
   "version": "0.1.0",
   "private": true,
-  "devDependencies": {
-    "react-scripts": "0.8.5"
-  },
   "dependencies": {
+    "react-scripts": "0.8.5",
     "axios": "^0.15.3",
     "babel": "^6.5.2",
     "babel-core": "^6.22.1",
     "download": "^5.0.3",
     "eslint": "^3.14.1",
     "eslint-plugin-import": "^2.2.0",
+    "express": "^4.15.2",
     "qs": "^6.3.0",
     "react": "^15.4.2",
     "react-bootstrap": "^0.30.7",
@@ -24,7 +23,8 @@
     "to-csv": "^0.1.1"
   },
   "scripts": {
-    "start": "react-scripts start",
+    "start": "node server.js",
+    "postinstall": "react-scripts build",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
