@@ -27,7 +27,7 @@ class Manage extends React.Component {
 	}
 	componentWillMount() {
 		axios
-			.get(process.env.API_URL + 'schema')
+			.get(process.env.REACT_APP_API_URL + 'schema')
 			.then(response => {
 				this.setState({
 					schema: response.data
@@ -38,7 +38,7 @@ class Manage extends React.Component {
 
 	search(sqlQuery, queryType) {
 		axios
-			.post(process.env.API_URL + `query`, {
+			.post(process.env.REACT_APP_API_URL + `query`, {
 				query: sqlQuery
 			})
 			.then(response => {

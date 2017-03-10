@@ -10,7 +10,7 @@ module.exports = {
                 return fulfill();
             } else {
                 axios
-                    .post(process.env.LOGIN_URL, qs.stringify({
+                    .post(process.env.REACT_APP_LOGIN_URL, qs.stringify({
                         username: username,
                         password: pass
                     }))
