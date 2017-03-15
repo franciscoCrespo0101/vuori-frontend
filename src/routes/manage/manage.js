@@ -18,7 +18,7 @@ class Manage extends React.Component {
 		this.state = {
 			schema: [],
 			results: [],
-			tableName: 'customer',
+			tableName: [],
 			columnName: 'All',
 			input: ''
 		}
